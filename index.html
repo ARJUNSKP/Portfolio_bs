@@ -62,6 +62,7 @@
       }
       #contact ul{
         list-style: none;
+        padding: 0;
       }
       #contact ul li {
         margin: 16px 3rem;
@@ -87,6 +88,9 @@
       }
       #egu{
         margin: 5rem 0;
+      }
+      #product{
+        padding: 5rem;
       }
       /* #learn_more{
         padding:5rem 0
@@ -124,7 +128,7 @@
   </head>
   <body>
     <div id="maindiv">
-      <nav id="navbar-example2" class="navbar px-5 mb-3">
+      <!-- <nav id="navbar-example2" class="navbar px-5 mb-3">
         <a class="navbar-brand" style="color: #24b2bc" href="#">Portfolio</a>
         <ul class="nav">
           <li class="nav-item">
@@ -137,6 +141,22 @@
             <a class="nav-link" href="#contact">Contact</a>
           </li>
         </ul>
+      </nav> -->
+      <nav class="navbar navbar-expand-lg bg-body-tertiary bg-secondary">
+        <div class="container-fluid ps-5">
+          <a class="navbar-brand" href="#">Portfolio</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+        <div class="collapse navbar-collapse pe-5" id="navbarNavAltMarkup">
+          <div class="navbar-nav gap-2 text-center">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+            <a class="nav-link" href="#about">About</a>
+            <a class="nav-link" href="#contact">Contact</a>
+            <a class="nav-link" href="#product">Production</a>
+          </div>
+        </div>
       </nav>
       <div
         data-bs-spy="scroll"
@@ -256,7 +276,12 @@
               <div class="progress-bar bg-success" style="width: 90%">90%</div>
             </div>
           </div>
-          
+        </div>
+        <div class="text-center" id="product">
+          <h1>My <span class="text-warning">Project</span></h1>
+          <div class="p-4 gap-3">
+            <label>Twitter Clone:-</label><a href="https://stunning-axolotl-35f962.netlify.app" target="_blank">Twitter.com</a>
+          </div>
         </div>
       </div>
     </div>
