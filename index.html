@@ -30,9 +30,6 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <style>
-      #maindiv {
-        background-color: #000000;
-      }
       #home {
         padding: 15rem 0;
       }
@@ -55,7 +52,7 @@
         background-color: #f5f2f2;
       }
       #info {
-        padding: 10rem 0;
+        padding: 10rem 0rem;
       }
       #contact{
         padding-top: 5rem;
@@ -92,7 +89,7 @@
         margin: 5rem 0;
       }
       #product{
-        margin: 2rem 5rem;
+        padding: 5rem;
       }
       #num{
         text-decoration: none;
@@ -124,17 +121,17 @@
       /* start about */
       @media screen and (max-width:880px){
         #dp{
-          height: 300px;
-          width: 300px;
-          margin:9rem 0
+          height: 350px;
+          width: 350px;
+          margin:9rem 0;
         }
       }
       /* end about */
     </style>
   </head>
-  <body data-bs-spy="scroll" data-bs-target=".navbar">
+  <body style="background-color: #eec925;">
     <div id="maindiv">
-      <nav class="navbar navbar-expand-lg bg-body-tertiary bg-secondary">
+      <nav class="navbar navbar-expand-lg bg-body-tertiary bg-dark">
         <div class="container-fluid ps-5">
           <a class="navbar-brand" href="#">Portfolio</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -147,6 +144,7 @@
             <a class="nav-link" href="#about">About</a>
             <a class="nav-link" href="#contact">Contact</a>
             <a class="nav-link" href="#product">Production</a>
+            <a class="nav-link text-primary" href="./resume/Arjunsivadas's Resume.pdf" target="_blank"><b>Resume</b></a>
           </div>
         </div>
       </nav>
@@ -175,10 +173,10 @@
           </div>
         </div>
         <div class="row" id="about">
-          <div class="bg-warning col-md-6 col-lg-6 col-sm-12">
+          <div class="bg-warning col-lg-6 col-md-6 col-sm-12">
             <center><img src="../images/my_img.jpg" alt="dp" id="dp" /></center>
           </div>
-          <div class="bg-white Col-lg-6 col-md-6 col-sm-12 text-center" id="info" style="z-index: 1;">
+          <div class="bg-white col-lg-6 col-md-6 col-sm-12 text-center" id="info">
             <h1>Arjun Sivadas k.p</h1>
             <h4>Creative <span class="text-warning">Developer</span></h4>
             <p class="pt-3 ps-3 pe-3">
@@ -227,51 +225,52 @@
           <div class="col-lg-6 col-md-6 col-sm-12 text-center" id="skildata">
             <h1 data-aos="fade-left">My <span class="text-warning">Skills</span></h1>
             <hr>
-            <label><b>HTML</b></label>
-            <div class="progress ms-2 me-2" role="progressbar" aria-label="Success example" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
-              <div class="progress-bar bg-success" style="width: 90%">90%</div>
-            </div>
-            <label><b>CSS</b></label>
-            <div class="progress ms-2 me-2" role="progressbar" aria-label="Success example" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
-              <div class="progress-bar bg-success" style="width: 90%">90%</div>
-            </div>
-            <label><b>JavaScript</b></label>
-            <div class="progress ms-2 me-2" role="progressbar" aria-label="Success example" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
-              <div class="progress-bar bg-success" style="width: 30%">30%</div>
-            </div>
-            <label><b>bootstrap</b></label>
-            <div class="progress ms-2 me-2" role="progressbar" aria-label="Success example" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
-              <div class="progress-bar bg-success" style="width: 80%">80%</div>
-            </div>
-            <label><b>React</b></label>
-            <div class="progress ms-2 me-2" role="progressbar" aria-label="Success example" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
-              <div class="progress-bar bg-success" style="width: 20%">20%</div>
-            </div>
-            <label><b>Python</b></label>
-            <div class="progress ms-2 me-2" role="progressbar" aria-label="Success example" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
-              <div class="progress-bar bg-success" style="width: 90%">90%</div>
-            </div>
-            <label><b>Java</b></label>
-            <div class="progress ms-2 me-2" role="progressbar" aria-label="Success example" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
-              <div class="progress-bar bg-success" style="width: 20%">20%</div>
-            </div>
-            <label><b>C</b></label>
-            <div class="progress ms-2 me-2" role="progressbar" aria-label="Success example" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
-              <div class="progress-bar bg-success" style="width: 40%">40%</div>
-            </div>
-            <label><b>PSQL</b></label>
-            <div class="progress ms-2 me-2" role="progressbar" aria-label="Success example" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
-              <div class="progress-bar bg-success" style="width: 70%">70%</div>
-            </div>
-            <label><b>Odoo</b></label>
-            <div class="progress ms-2 me-2" role="progressbar" aria-label="Success example" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
-              <div class="progress-bar bg-success" style="width: 90%">90%</div>
-            </div>
+            <div style="margin: 0rem 1.5rem;">
+              <label><b>HTML</b></label>
+              <div class="progress" role="progressbar" aria-label="Success example" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                <div class="progress-bar bg-success" style="width: 90%">90%</div>
+              </div>
+              <label><b>CSS</b></label>
+              <div class="progress" role="progressbar" aria-label="Success example" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                <div class="progress-bar bg-success" style="width: 90%">90%</div>
+              </div>
+              <label><b>JavaScript</b></label>
+              <div class="progress" role="progressbar" aria-label="Success example" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                <div class="progress-bar bg-success" style="width: 30%">30%</div>
+              </div>
+              <label><b>bootstrap</b></label>
+              <div class="progress" role="progressbar" aria-label="Success example" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                <div class="progress-bar bg-success" style="width: 80%">80%</div>
+              </div>
+              <label><b>React</b></label>
+              <div class="progress" role="progressbar" aria-label="Success example" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                <div class="progress-bar bg-success" style="width: 20%">20%</div>
+              </div>
+              <label><b>Python</b></label>
+              <div class="progress" role="progressbar" aria-label="Success example" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                <div class="progress-bar bg-success" style="width: 90%">90%</div>
+              </div>
+              <label><b>Java</b></label>
+              <div class="progress" role="progressbar" aria-label="Success example" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                <div class="progress-bar bg-success" style="width: 20%">20%</div>
+              </div>
+              <label><b>C</b></label>
+              <div class="progress" role="progressbar" aria-label="Success example" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                <div class="progress-bar bg-success" style="width: 40%">40%</div>
+              </div>
+              <label><b>PSQL</b></label>
+              <div class="progress" role="progressbar" aria-label="Success example" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                <div class="progress-bar bg-success" style="width: 70%">70%</div>
+              </div>
+              <label><b>Odoo</b></label>
+              <div class="progress" role="progressbar" aria-label="Success example" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                <div class="progress-bar bg-success" style="width: 90%">90%</div>
+              </div>
           </div>
         </div>
-        <div class="text-center" style="padding-bottom: 3rem;">
-          <h1 data-aos="fade-down" style="padding: 2.5rem 0">My <span class="text-warning">Project</span></h1>
-          <div class="card bg-warning" data-aos="fade-up" data-aos-delay="300" id="product">
+        <div class="text-center" id="product">
+          <h1 data-aos="fade-down">My <span class="text-warning">Project</span></h1>
+          <div class="card bg-warning" data-aos="fade-up" data-aos-delay="500" style="margin: 1.5rem 0;">
             <div class="card-body">
               <label>Twitter Clone:-</label><a href="https://stunning-axolotl-35f962.netlify.app" target="_blank">Twitter.com</a>
             </div>
