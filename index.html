@@ -50,6 +50,7 @@
       }
       #about {
         background-color: #f5f2f2;
+        width: 100%;
       }
       #info {
         padding: 10rem 0rem;
@@ -95,6 +96,9 @@
         text-decoration: none;
         color: dark;
       }
+      #projectcard{
+        margin: 1.7rem 7rem;
+      }
       /* #learn_more{
         padding:5rem 0
       } */
@@ -127,6 +131,23 @@
         }
       }
       /* end about */
+      /* producctcard start */
+      @media screen and (max-width:650px){
+        #projectcard{
+          margin: 1.7rem 2rem;
+        }
+      }
+      @media screen and (max-width:450px){
+        #projectcard{
+          margin: 1.7rem 1rem;
+        }
+      }
+      @media screen and (max-width:400px){
+        #projectcard{
+          margin: 1.7rem 0rem;
+        }
+      }
+      /* product card end */
     </style>
   </head>
   <body>
@@ -270,7 +291,7 @@
         </div>
         <div class="text-center" id="product">
           <h1 data-aos="fade-down">My <span class="text-warning">Project</span></h1>
-          <div class="card bg-warning" data-aos="fade-up" data-aos-delay="500" style="margin: 1.5rem 7rem;">
+          <div class="card bg-warning" data-aos="fade-up" data-aos-delay="500" id="projectcard" >
             <div class="card-body">
               <label>Twitter Clone:-</label><a href="https://stunning-axolotl-35f962.netlify.app" target="_blank">Twitter.com</a>
             </div>
