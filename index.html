@@ -27,9 +27,10 @@
       crossorigin="anonymous"
     />
     <link rel="preconnect" href="https://fonts.googleapis.com"> 
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> -->
     <style>
+      body::-webkit-scrollbar{ display:none;}
       #home {
         padding: 15rem 0;
       }
@@ -99,9 +100,9 @@
       #projectcard{
         margin: 1.7rem 7rem;
       }
-      /* #learn_more{
-        padding:5rem 0
-      } */
+      #learn_more{
+        width: 101%
+      }
       /* start contact media */
       @media screen and (max-width: 1000px) {
        #contact ul li {
@@ -150,11 +151,11 @@
       /* product card end */
     </style>
   </head>
-  <body>
+  <body style="margin:0; background-color: yellow;">
     <div id="maindiv">
       <nav class="navbar navbar-expand-lg bg-body-tertiary bg-dark">
         <div class="container-fluid ps-5">
-          <a class="navbar-brand" href="#">Portfolio</a>
+          <a class="navbar-brand" href="#">Port<span class="text-warning">Folio</span></a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -177,7 +178,7 @@
         class="scrollspy-example bg-body-tertiary rounded-2"
         tabindex="0"
       >
-        <div id="home" class="bg-black text-white text-center">
+        <div id="home" class="bg-black text-white text-center w-100">
           <h1  data-aos="fade-up" data-aos-delay="300">Arjun sivadas k.p</h1>
           <h3 data-aos="fade-up" data-aos-delay="600">Creative <span class="text-warning">Developer</span></h3>
           <div>
@@ -195,12 +196,12 @@
         </div>
         <div class="row" id="about">
           <div class="bg-warning col-lg-6 col-md-6 col-sm-12">
-            <center><img src="../images/my_img.jpg" alt="dp" id="dp" /></center>
+            <center><img src="../images/my_img.jpg" alt="dp" id="dp"/></center>
           </div>
-          <div class="bg-white col-lg-6 col-md-6 col-sm-12 text-center" id="info">
+          <div class="bg-white col-lg-6 col-md-6 col-sm-12 text-center container-fluid px-3" id="info">
             <h1>Arjun Sivadas k.p</h1>
             <h4>Creative <span class="text-warning">Developer</span></h4>
-            <p class="pt-3 ps-3 pe-3">
+            <p>
               My name is <b>Arjun sivadas k P</b>.I am a Web Developer following
               MERN,and i'm very passionate to improve my skills.I have done many
               projects with HTML CSS BootStrap.
@@ -221,9 +222,9 @@
             <li><a href="https://www.instagram.com/arjun__sivadas/" id="id3" target="_blank" style="text-decoration: none;color: rgb(10, 10, 10);">arjun__sivadas</a></li>
           </ul>
         </div>
-        <div class="skilsEgu row" id="learn_more">
+        <div class="row w-100" id="learn_more">
           <div class="col-lg-6 col-md-6 col-sm-12 text-center bg-warning" id="education" >
-            <h1 style="margin-top: 2rem;" data-aos="fade-right" >Education</h1>
+            <h1 style="margin-top: 2rem;" data-aos="fade-right"data-aos-delay="300" >Education</h1>
             <hr>
             <div id="egu">
               <div class="clg">
@@ -244,7 +245,7 @@
             </div>
           </div>
           <div class="col-lg-6 col-md-6 col-sm-12 text-center" id="skildata">
-            <h1 data-aos="fade-left">My <span class="text-warning">Skills</span></h1>
+            <h1 data-aos="fade-left" data-aos-delay="300">My <span class="text-warning">Skills</span></h1>
             <hr>
             <div style="margin: 0rem 1.5rem;">
               <label><b>HTML</b></label>
@@ -299,8 +300,8 @@
         </div>
       </div>
     </div>
-    <!-- js section -->
+    <!-- js section
     <script src="./js/aos.js"></script>
-    <script src="./js/main.js"></script>
+    <script src="./js/main.js"></script> -->
   </body>
 </html>
