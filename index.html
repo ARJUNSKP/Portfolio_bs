@@ -39,14 +39,27 @@
         justify-content: center;
         flex-direction: column;
       }
-      /* #arrow{
+      #arrow{
             animation: transform1 1s ease-in-out .5s infinite;
         }
-        @keyframes transform1 {
+        /* @keyframes transform1 {
             0%{
-                transform: translateX(5rem);
+                
+            }
+            100%{
+              
             }
         } */
+        @keyframes transform1{
+          100%{
+            display: inline-block;
+            margin: 0 -0.5rem;
+
+            /* animation: bounce; referring directly to the animation's @keyframe declaration */
+            /* animation-duration: 2s; don't forget to set a duration! */
+          }
+        }
+
       #dp {
         width: 400px;
         height: 400px;
@@ -212,7 +225,7 @@
               <b
                 ><i
                   ><a href="#about"
-                    >More About me<i
+                    >More About me  <i
                       class="bi bi-arrow-bar-right"
                       id="arrow"
                     ></i></a></i
